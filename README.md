@@ -1,4 +1,4 @@
-# Desafio Conta Azul - bankslips-api
+# Desafio Conta Azul - bankslip-api
 
 REST API para gerenciamento de boletos em resposta ao Desafio da Conta Azul.
 
