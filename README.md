@@ -24,15 +24,21 @@ REST API para gerenciamento de boletos em resposta ao Desafio da Conta Azul.
 ## Subir o projeto
 
 1. Acesse a pasta root do projeto onde está presente o pom.xml.
-2. Faça a instalação do projeto utilizando o maven e já gerando a imagem docker.
+2. Faça a instalação do projeto utilizando o maven.
 
 ```
-mvn clean install docker:build
+mvn clean install
 ```
 
 Com isto finalizado, há 3 maneiras de fazer o projeto subir:
 
 ##### 1 - Rodando através de imagem docker
+- Caso prefira subir usando o docker, será necessário gerar a imagem através do maven.
+- Ainda na pasta onde está presente o pom.xml, execute o seguinte comando para criar a imagem docker:
+```
+mvn docker:build
+```
+Assim, será possível subir o projeto usando o docker com o seguinte comando:
 ```
 docker run -p8080:8080  br.com.gustavocpassos.contaazul/bankslip-api:1.0.0
 ```
